@@ -15,6 +15,9 @@
 		7FB09F8625FFD87300D41ACE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB09F8425FFD87300D41ACE /* LaunchScreen.storyboard */; };
 		7FB09F9125FFD87400D41ACE /* TestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB09F9025FFD87400D41ACE /* TestProjectTests.swift */; };
 		7FB09F9C25FFD87400D41ACE /* TestProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB09F9B25FFD87400D41ACE /* TestProjectUITests.swift */; };
+		7FB09FAE25FFD8A100D41ACE /* Auction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB09FAD25FFD8A100D41ACE /* Auction.swift */; };
+		7FB09FB525FFD92200D41ACE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB09FB425FFD92200D41ACE /* Constants.swift */; };
+		7FB09FBD25FFE36F00D41ACE /* AuctionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB09FBC25FFE36F00D41ACE /* AuctionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		7FB09F9725FFD87400D41ACE /* TestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB09F9B25FFD87400D41ACE /* TestProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProjectUITests.swift; sourceTree = "<group>"; };
 		7FB09F9D25FFD87400D41ACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FB09FAD25FFD8A100D41ACE /* Auction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auction.swift; sourceTree = "<group>"; };
+		7FB09FB425FFD92200D41ACE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7FB09FBC25FFE36F00D41ACE /* AuctionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,16 @@
 		7FB09F7825FFD87300D41ACE /* TestProject */ = {
 			isa = PBXGroup;
 			children = (
+				7FB09FB325FFD8C000D41ACE /* Service */,
+				7FB09FB225FFD8A800D41ACE /* ViewControllers */,
+				7FB09FAC25FFD88100D41ACE /* Model */,
 				7FB09F7925FFD87300D41ACE /* AppDelegate.swift */,
 				7FB09F7B25FFD87300D41ACE /* SceneDelegate.swift */,
-				7FB09F7D25FFD87300D41ACE /* ViewController.swift */,
 				7FB09F7F25FFD87300D41ACE /* Main.storyboard */,
 				7FB09F8225FFD87300D41ACE /* Assets.xcassets */,
 				7FB09F8425FFD87300D41ACE /* LaunchScreen.storyboard */,
 				7FB09F8725FFD87300D41ACE /* Info.plist */,
+				7FB09FB425FFD92200D41ACE /* Constants.swift */,
 			);
 			path = TestProject;
 			sourceTree = "<group>";
@@ -126,6 +135,30 @@
 				7FB09F9D25FFD87400D41ACE /* Info.plist */,
 			);
 			path = TestProjectUITests;
+			sourceTree = "<group>";
+		};
+		7FB09FAC25FFD88100D41ACE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FB09FAD25FFD8A100D41ACE /* Auction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7FB09FB225FFD8A800D41ACE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7FB09F7D25FFD87300D41ACE /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7FB09FB325FFD8C000D41ACE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7FB09FBC25FFE36F00D41ACE /* AuctionService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FB09FB525FFD92200D41ACE /* Constants.swift in Sources */,
 				7FB09F7E25FFD87300D41ACE /* ViewController.swift in Sources */,
 				7FB09F7A25FFD87300D41ACE /* AppDelegate.swift in Sources */,
+				7FB09FBD25FFE36F00D41ACE /* AuctionService.swift in Sources */,
 				7FB09F7C25FFD87300D41ACE /* SceneDelegate.swift in Sources */,
+				7FB09FAE25FFD8A100D41ACE /* Auction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
